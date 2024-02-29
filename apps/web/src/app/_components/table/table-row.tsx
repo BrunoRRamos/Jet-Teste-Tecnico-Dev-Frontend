@@ -15,7 +15,7 @@ export function Row({ carName, nextReservation, status, rating }: RowProps) {
     <tr className="border-b p-2 h-14">
       <td>
         <div className="flex items-center gap-4 px-1">
-          <Image alt="CarImage" src='assets/images/unsplash__VCRYZKq8XU.png' width={48} height={48} />
+          <Image alt="CarImage" src='/assets/images/unsplash__VCRYZKq8XU.png' width={48} height={48} />
           <span>{carName}</span>
         </div>
       </td>

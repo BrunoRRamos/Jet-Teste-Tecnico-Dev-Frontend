@@ -1,5 +1,6 @@
-import { List } from "../components/list/list";
-import { Table } from "../components/table/table-view";
+import { List } from "./_components/list/list";
+import { Table } from "./_components/table/table-view";
+
 
 
 interface Data {

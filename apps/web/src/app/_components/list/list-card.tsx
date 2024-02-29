@@ -19,7 +19,7 @@ export function Card({ carName, nextReservation, status, rating }: CardProps) {
           <Image
             className="w-full h-full"
             alt="CarImage"
-            src='assets/images/unsplash__VCRYZKq8XU.png'
+            src='/assets/images/unsplash__VCRYZKq8XU.png'
             width={48}
             height={48}
           />
