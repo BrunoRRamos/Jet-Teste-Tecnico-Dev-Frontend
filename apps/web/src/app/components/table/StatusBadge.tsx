@@ -5,7 +5,7 @@ type Data = {
 const backgroundColor = (available: boolean) => {
   return available
     ? "bg-green-100 decoration-green-800"
-    : "bg-red-100 decoration-green-800";
+    : "bg-red-100 decoration-red-800";
 };
 
 const labelText = (available: boolean) => {
