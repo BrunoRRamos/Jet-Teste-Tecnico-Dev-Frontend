@@ -2,13 +2,12 @@ import Image from "next/image";
 import carImage from "../../assets/images/unsplash__VCRYZKq8XU.png";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { FaStar } from "react-icons/fa";
-
-type Status = "AVAILABLE" | "UNAVAILABLE";
+import { StatusBadge } from "./StatusBadge";
 
 type RowProps = {
   carName: String;
   nextReservation: Date;
-  status: Status;
+  status: boolean;
   rating: 1 | 2 | 3 | 4 | 5;
 };
 
@@ -31,7 +30,7 @@ export function Row({ carName, nextReservation, status, rating }: RowProps) {
       </td>
 
       <td className="status">
-        <span>{status}</span>
+        <span><StatusBadge available={status} /></span>
       </td>
 
       <td>

@@ -1,11 +1,9 @@
 import { Row } from "./TableRow";
 
-type Status = "AVAILABLE" | "UNAVAILABLE";
-
 type Data = {
   carName: String;
   nextReservation: Date;
-  status: Status;
+  status: boolean;
   rating: 1 | 2 | 3 | 4 | 5;
 };
 
