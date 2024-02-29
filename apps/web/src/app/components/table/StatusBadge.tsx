@@ -9,7 +9,7 @@ const backgroundColor = (available: boolean) => {
 };
 
 const labelText = (available: boolean) => {
-  return available ? "AVAILABLE" : "UNAVAILABLE";
+  return available ? "Available" : "Unavailable";
 };
 
 export function StatusBadge({ available }: Data) {
