@@ -1,8 +1,9 @@
-import { List } from "./components/list/List";
-import { Table } from "./components/table/TableView";
+import { List } from "../components/list/list";
+import { Table } from "../components/table/table-view";
 
-type Data = {
-  carName: String;
+
+interface Data {
+  carName: string;
   nextReservation: Date;
   status: boolean;
   rating: 1 | 2 | 3 | 4 | 5;
@@ -15,7 +16,8 @@ const mockData: Data = {
   rating: 5,
 };
 
-const mockDataArray: Data[] = Array(5).fill(mockData);
+
+const mockDataArray = Array.from({length: 5}).map(() => mockData);
 
 export default function Page() {
   return (

@@ -1,13 +1,13 @@
-import { Row } from "./TableRow";
+import { Row } from "./table-row";
 
-type Data = {
-  carName: String;
-  nextReservation: Date;
-  status: boolean;
-  rating: 1 | 2 | 3 | 4 | 5;
+interface TableProps {
+  data: {
+    carName: string;
+    nextReservation: Date;
+    status: boolean;
+    rating: 1 | 2 | 3 | 4 | 5;
+  }[];
 };
-
-type TableProps = { data: Data[] };
 
 export function Table({ data }: TableProps) {
   return (

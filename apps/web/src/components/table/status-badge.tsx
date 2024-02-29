@@ -1,4 +1,4 @@
-type Data = {
+interface Data {
   available: boolean;
 };
 

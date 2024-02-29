@@ -1,13 +1,13 @@
-import { Card } from "./ListCard";
+import { Card } from "./list-card";
 
-type Data = {
-  carName: String;
-  nextReservation: Date;
-  status: boolean;
-  rating: 1 | 2 | 3 | 4 | 5;
-};
-
-type ListProps = { data: Data[] };
+interface ListProps {
+  data: {
+    carName: string;
+    nextReservation: Date;
+    status: boolean;
+    rating: 1 | 2 | 3 | 4 | 5;
+  }[];
+}
 
 export function List({ data }: ListProps) {
   return (

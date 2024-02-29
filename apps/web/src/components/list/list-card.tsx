@@ -1,11 +1,10 @@
 import Image from "next/image";
-import carImage from "../../../assets/images/unsplash__VCRYZKq8XU.png";
 import { FaStar } from "react-icons/fa";
 import { BsThreeDotsVertical } from "react-icons/bs";
-import { StatusIcon } from "./StatusIcon";
+import { StatusIcon } from "./status-icon";
 
-type CardProps = {
-  carName: String;
+interface CardProps {
+  carName: string;
   nextReservation: Date;
   status: boolean;
   rating: 1 | 2 | 3 | 4 | 5;
@@ -20,7 +19,7 @@ export function Card({ carName, nextReservation, status, rating }: CardProps) {
           <Image
             className="w-full h-full"
             alt="CarImage"
-            src={carImage.src}
+            src='assets/images/unsplash__VCRYZKq8XU.png'
             width={48}
             height={48}
           />

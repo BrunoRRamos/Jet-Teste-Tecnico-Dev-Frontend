@@ -1,7 +1,7 @@
 import { HiOutlineCheckCircle } from "react-icons/hi";
 import { HiOutlineXCircle } from "react-icons/hi";
 
-type StatusIconProps = {
+interface StatusIconProps {
   available: boolean;
 };
 
