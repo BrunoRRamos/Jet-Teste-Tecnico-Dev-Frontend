@@ -22,15 +22,13 @@ export function Row({ carName, nextReservation, status, rating }: RowProps) {
       </td>
 
       <td className="nextReserv">
-        <span>
-          {new Intl.DateTimeFormat("default", { dateStyle: "short" }).format(
-            nextReservation
-          )}
-        </span>
+        <span>{new Intl.DateTimeFormat('en-US', { month: '2-digit', day: '2-digit' }).format(nextReservation)}</span>
       </td>
 
       <td className="status">
-        <span><StatusBadge available={status} /></span>
+        <span>
+          <StatusBadge available={status} />
+        </span>
       </td>
 
       <td>
