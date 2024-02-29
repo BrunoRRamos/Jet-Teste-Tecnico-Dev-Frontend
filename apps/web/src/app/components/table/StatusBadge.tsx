@@ -14,10 +14,8 @@ const labelText = (available: boolean) => {
 
 export function StatusBadge({ available }: Data) {
   return (
-        <label
-          className={`px-2.5 py-0.5 rounded-md ${backgroundColor(available)}`}
-        >
-          {labelText(available)}
-        </label>
+    <label className={`px-2.5 py-0.5 rounded-md ${backgroundColor(available)}`}>
+      {labelText(available)}
+    </label>
   );
 }

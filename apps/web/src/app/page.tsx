@@ -15,7 +15,6 @@ const mockData: Data = {
   rating: 5,
 };
 
-
 const mockDataArray: Data[] = Array(5).fill(mockData);
 
 export default function Page() {
